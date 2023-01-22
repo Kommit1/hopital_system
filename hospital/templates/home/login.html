@@ -1,0 +1,45 @@
+{% extends 'layout1.html' %}
+{% block title %}
+  login
+{% endblock title %}
+
+{% block css %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/custom_css/navbar.css') }}">
+<link rel="stylesheet" href="../../static/css/login.css" />
+<script
+  src="https://kit.fontawesome.com/560f028a70.js"
+  crossorigin="anonymous"
+></script>
+{% endblock css %}
+
+{% block content %}
+{% include 'navbar.html' %}
+<div class="first">
+  <form method="post">
+    {% include '_messages.html' %}
+    <div class="heading">
+      <h1>Hospital System</h1>
+      <i> &quot;life matters most....&quot; </i>
+    </div>
+
+    <div class="input-group">
+      <input type="text" id="name" name="name" required />
+      <label for="name"
+        ><i class="fa-solid fa-user-doctor"></i>REG/FILE NO
+      </label>
+    </div>
+    <div class="input-group">
+      <input type="password" id="Password" name='password' required />
+      <label for="Password"
+        ><i class="fa-solid fa-phone"></i>Password
+      </label>
+    </div>
+    <div>
+      <button type="submit">LOGIN<i class="fas fa-paper-plane"></i></button>
+      <button class="buttonR" type="">FORGET PASSWORD ?</button>
+    </div>
+  </form>
+</div>
+{% endblock content %}
+
