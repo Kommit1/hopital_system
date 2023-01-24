@@ -30,7 +30,7 @@ a {
     width: 15%;
     background-color: rgb(35, 35, 53);
     color: bisque;
-    margin-right: 20px;
+   
     height: 600px;
     
 }
@@ -45,6 +45,8 @@ a {
 #option-flex {
     display: flex;
     flex-wrap: wrap;
+    background-color: rgb(230, 240, 237);
+    padding-left: 20px;
 }
 
 /* #option-flex div {
@@ -63,11 +65,12 @@ a {
 }
 
 .image {
-    border: 1px solid;
     width: 100px;
+    background-color: rgb(226, 219, 231);
 }
 
 .record {
-    border: 1px solid;
     width: 150px;
+    text-align: center;
+    background-color: white;
 }
