@@ -4,6 +4,11 @@ from .models import DoctorReport
 from .forms import DoctorForm
 from hospital.patient.models import Patient
 
+
+@app.route("/doctor")
+def doctor():
+    return (render_template('/admin/admin.html'))
+
 @app.route("/doctor/createrecord/<int:id>", methods=['POST', 'GET'])
 def createDoctorRecord(id):
     """Controller where doctor can create a record for patient"""

@@ -5,6 +5,11 @@
 
 a {
     text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: red;
 }
 .nav-bar {
     height: 70px;
@@ -30,7 +35,6 @@ a {
     width: 15%;
     background-color: rgb(35, 35, 53);
     color: bisque;
-   
     height: 600px;
     
 }
