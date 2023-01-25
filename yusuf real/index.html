@@ -4,12 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{{url_for('static', filename='/image/assets/Icons/all.min.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='/image/assets/Icons/fontawesome.min.css')}}">
-    <link
-    rel="stylesheet"
-    href="{{ url_for('static', filename='css/custom_css/main.css') }}"
-  />
+    <link rel="stylesheet" href="./dist/assets/Icons/all.min.css">
+    <link rel="stylesheet" href="./dist/assets/Icons/fontawesome.min.css">
+    <link rel="stylesheet" href="./dist/css/main.css"/>
     <script defer src="./dist/script/main.js"></script>
     <title>Klinik Website</title>
   </head>
@@ -65,15 +62,15 @@
         </article>
 
         <figure class="sideImg">
-          <img src="{{url_for('static', filename='/image/assets/Img/hero-section-img.png')}}" alt="">
+          <img src="./dist/assets/Img/hero-section-img.png" alt="">
         </figure>
       </section>
 
       <!-- About Section -->
       <section id="about" class="about flow gridWrapper gridWrapper__about">
         <picture class="about__image">
-          <source media="(min-width: 992px)" srcset="{{url_for('static', filename='/image/assets/Img/aboutLandscape.jpg')}}">
-          <img src="{{url_for('static', filename='/image/assets/Img/about.jpg')}}" alt="Spaceport">
+          <source media="(min-width: 992px)" srcset="./dist/assets/Img/aboutLandscape.jpg">
+          <img src="./dist/assets/Img/about.jpg" alt="Spaceport">
         </picture>
 
         <article class="articleInfo flow">
